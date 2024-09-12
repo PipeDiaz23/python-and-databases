@@ -3,7 +3,7 @@
 ## Create and activate Python virtual environment
 bash
     python -m venv venv
-    .venv/bin/Activate - .\venv\Scripts\Activate
+    .\venv\Scripts\Activate
 
 ## Activar permisos para inicia el entorno, solo sino lo 
 ´´´bash
