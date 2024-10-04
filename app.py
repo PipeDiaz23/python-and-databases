@@ -23,9 +23,9 @@ if uploaded_file_1 is not None and uploaded_file_2 is not None:
     df2 = _extract_data_from_excel(uploaded_file_2)
     st.write(df2)
     
-    # Limpiar los nombres de las columnas
-    df1.columns = df1.columns.str.strip()
-    df2.columns = df2.columns.str.strip()
+    # # Limpiar los nombres de las columnas
+    # df1.columns = df1.columns.str.strip()
+    # df2.columns = df2.columns.str.strip()
     
     if not df1.empty and not df2.empty:
         # Verificar si ProductID existe en ambos DataFrames
