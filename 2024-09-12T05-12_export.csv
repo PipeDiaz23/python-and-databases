@@ -1,6 +1,0 @@
-﻿,ClientID,ClientName,ContactNumber,Email,ProductID,OrderID,OrderDate,Quantity,CustomerName,DeliveryAddress
-0,1,Juan Pérez,555-1234,juan.perez@email.com,1,101,2024-09-11 10:00:00,2,John Doe,123 Elm St
-1,2,María López,555-5678,maria.lopez@email.com,2,102,2024-09-11 11:00:00,1,Jane Smith,456 Oak St
-2,3,Carlos Martínez,555-9012,carlos.martinez@email.com,3,103,2024-09-11 12:00:00,3,Alice Johnson,789 Pine St
-3,4,Laura Rodríguez,555-3456,laura.rodriguez@email.com,4,104,2024-09-12 09:30:00,1,Michael Brown,101 Maple St
-4,5,Andrés García,555-7890,andres.garcia@email.com,5,105,2024-09-12 10:15:00,2,Emily Davis,234 Cedar St
