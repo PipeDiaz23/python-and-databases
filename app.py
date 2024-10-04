@@ -23,21 +23,15 @@ if uploaded_file_1 is not None and uploaded_file_2 is not None:
     df2 = _extract_data_from_excel(uploaded_file_2)
     st.write(df2)
     
-    # # Limpiar los nombres de las columnas
-    # df1.columns = df1.columns.str.strip()
-    # df2.columns = df2.columns.str.strip()
     
     if not df1.empty and not df2.empty:
-        # Verificar si ProductID existe en ambos DataFrames
         if 'ProductID' in df1.columns and 'ProductID' in df2.columns:
-            # Realizar el merge
             combined_df = pd.merge(df1, df2, on='ProductID', how='inner')
             st.write("Combined DataFrame:")
             st.write(combined_df)
             
-            # Botón para insertar los datos en la base de datos
             if st.button("Upload to Database"):
-                insert_data_bulk(combined_df)  # Llamada a la función para insertar los datos
+                insert_data_bulk(combined_df) 
                 st.success("Data inserted into the database successfully!")
         else:
             st.write("Column 'ProductID' not found in one or both files.")

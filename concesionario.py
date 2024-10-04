@@ -40,5 +40,6 @@ def insert_data_bulk(df, table_name='clientesypedidos'):
     finally:
         if cursor:
             cursor.close()
+            
         if connection and connection.is_connected():
             connection.close()
